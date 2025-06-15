@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avalin Vasthiram – Churidar Boutique</title>
+  <style>
+    /* Reset & Base Styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #faf6f2;
+      color: #333;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* Header & Nav */
+    header {
+      background: #b48a78;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    header h1 { margin-bottom: 0.5rem; }
+    nav {
+      background: #fff;
+      padding: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      text-align: center;
+    }
+    nav ul { display: flex; justify-content: center; flex-wrap: wrap; }
+    nav li { margin: 0 1.5rem; }
+    nav a {
+      color: #b48a78;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    nav a:hover { background: rgba(180,138,120,0.1); }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: #fff;
+      padding: 6rem 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.3rem; margin-bottom: 2rem; }
+    .btn {
+      background: #b48a78;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #9e7462; }
+
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .section { margin-bottom: 3rem; }
+    .section h2 {
+      color: #b48a78;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .section p { margin-bottom: 1rem; }
+
+    /* Product Cards */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 280px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(180,138,120,0.08);
+      transition: transform 0.2s;
+    }
+    .product-card:hover { transform: translateY(-5px) scale(1.03); }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .product-card h3 { margin: 0.5rem 0; color: #333; }
+    .product-card p { margin: 0.5rem 0; color: #666; }
+    .product-card .details { color: #555; }
+    .product-card .price { color: #b48a78; font-weight: bold; }
+
+    /* Contact Section */
+    .contact {
+      background: #f5e7df;
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .contact p { margin-bottom: 0.5rem; }
+
+    /* Footer */
+    footer {
+      background: #b48a78;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      nav ul { flex-direction: column; }
+      nav li { margin: 0.5rem 0; }
+      .products { flex-direction: column; align-items: center; }
+      .product-card { width: 100%; max-width: 320px; }
+      .hero { padding: 4rem 1rem; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Avalin Vasthiram</h1>
+    <p>Elegance. Tradition. Style.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home / Hero -->
+  <section class="hero" id="home">
+    <h1>Welcome to Avalin Vasthiram</h1>
+    <p>Discover exclusive churidar sets, handcrafted with love and tradition. Redefine your style with our unique collections.</p>
+    <a href="#collection" class="btn">Shop Now</a>
+  </section>
+
+  <!-- About -->
+  <section class="container section" id="about">
+    <h2>About Us</h2>
+    <p>
+      Avalin Vasthiram is a boutique dedicated to bringing you the finest in traditional and contemporary ethnic wear. Our handpicked churidar collections are crafted with attention to detail, quality fabrics, and the latest trends, ensuring you look your best for every occasion.
+    </p>
+  </section>
+
+  <!-- Collection -->
+  <section class="container section" id="collection">
+    <h2>Churidar Collection</h2>
+    <div class="products" id="product-list">
+      <!-- Products will be inserted here by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p>Visit our boutique or reach out to us for custom orders and inquiries.</p>
+      <p><strong>Address:</strong> 123, Fashion Street, Chennai, Tamil Nadu</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> avalin@vasthiram.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Avalin Vasthiram Boutique. All Rights Reserved.
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const products = [
+      {
+        name: "Floral Print Churidar Set",
+        description: "Lightweight cotton churidar set with vibrant floral print, perfect for daily wear.",
+        price: 1499,
+        image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80",
+        fabric: "Cotton",
+        color: "Yellow",
+        size: "M"
+      },
+      {
+        name: "Embroidered Party Churidar",
+        description: "Elegant embroidered churidar set for parties and events, available in rich colors.",
+        price: 2999,
+        image: "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?auto=format&fit=crop&w=400&q=80",
+        fabric: "Viscose",
+        color: "Maroon",
+        size: "L"
+      },
+      {
+        name: "Designer Churidar with Dupatta",
+        description: "Stylish designer churidar set with matching dupatta, suitable for festive occasions.",
+        price: 2499,
+        image: "https://images.unsplash.com/photo-1529822598393-580b222f8f9e?auto=format&fit=crop&w=400&q=80",
+        fabric: "Rayon",
+        color: "Blue",
+        size: "S"
+      },
+      {
+        name: "Printed Silk Churidar",
+        description: "Luxurious printed silk churidar set, featuring contemporary patterns.",
+        price: 3599,
+        image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
+        fabric: "Silk",
+        color: "Pink",
+        size: "M"
+      }
+    ];
+
+    const productList = document.getElementById('product-list');
+
+    products.forEach(product => {
+      const productCard = document.createElement('div');
+      productCard.className = 'product-card';
+      productCard.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+        <p class="details"><strong>Fabric:</strong> ${product.fabric}</p>
+        <p class="details"><strong>Color:</strong> ${product.color}</p>
+        <p class="details"><strong>Size:</strong> ${product.size}</p>
+        <p class="price">₹${product.price}</p>
+      `;
+      productList.appendChild(productCard);
+    });
+  </script>
+</body>
+</html>
